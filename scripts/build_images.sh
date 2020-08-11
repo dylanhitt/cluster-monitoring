@@ -5,13 +5,13 @@
 
 export DOCKER_CLI_EXPERIMENTAL=enabled
 
-REPO=carlosedp
+REPO=dylanhitt1
 
 export AOR_VERSION=2.3
 export KSM_VERSION=v1.9.6
-export PROM_OP_VERSION=v0.40.0
+export PROM_OP_VERSION=v0.41.0
 export KUBE_RBAC_VERSION=v0.5.0
-export PROM_CONFIG_RELOADER_VERSION=v0.40.0
+export PROM_CONFIG_RELOADER_VERSION=v0.41.0
 export CONFIGMAP_RELOAD_VERSION=latest
 #-------------------------------------------------------------------------------
 # Kubernetes addon-resizer
@@ -40,7 +40,7 @@ done
 
 #-------------------------------------------------------------------------------
 # Kube-state-metrics
-IMAGE=carlosedp/kube-state-metrics
+IMAGE=dylanhitt1/kube-state-metrics
 ALL_ARCH=(amd64 arm arm64 ppc64le)
 
 rm -rf $GOPATH/src/k8s.io/kube-state-metrics
@@ -70,7 +70,7 @@ done
 popd
 #-------------------------------------------------------------------------------
 # Prometheus-operator
-IMAGE=carlosedp/prometheus-operator
+IMAGE=dylanhitt1/prometheus-operator
 ALL_ARCH=(amd64 arm arm64 ppc64le)
 
 rm -rf $GOPATH/src/github.com/coreos/prometheus-operator
@@ -104,7 +104,7 @@ rm -rf Dockerfile.custom
 popd
 #-------------------------------------------------------------------------------
 # kube-rbac-proxy
-IMAGE=carlosedp/kube-rbac-proxy
+IMAGE=dylanhitt1/kube-rbac-proxy
 ALL_ARCH=(amd64 arm arm64 ppc64le)
 
 rm -rf $GOPATH/src/github.com/brancz/
@@ -141,7 +141,7 @@ done
 
 #-------------------------------------------------------------------------------
 # prometheus-config-reloader
-IMAGE=carlosedp/prometheus-config-reloader
+IMAGE=dylanhitt1/prometheus-config-reloader
 ALL_ARCH=(amd64 arm arm64 ppc64le)
 
 pushd $GOPATH/src/github.com/coreos/prometheus-operator
@@ -170,7 +170,7 @@ rm -rf Dockerfile.custom
 
 #-------------------------------------------------------------------------------
 # configmap-reload
-IMAGE=carlosedp/configmap-reload
+IMAGE=dylanhitt1/configmap-reload
 ALL_ARCH=(amd64 arm arm64 ppc64le)
 
 rm -rf $GOPATH/src/github.com/openshift/configmap-reload
