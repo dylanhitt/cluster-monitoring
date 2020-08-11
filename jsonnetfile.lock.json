@@ -24,26 +24,6 @@
     {
       "source": {
         "git": {
-          "remote": "https://github.com/coreos/kube-prometheus.git",
-          "subdir": "jsonnet/kube-prometheus"
-        }
-      },
-      "version": "17989b42aa10b1c6afa07043cb05bcd5ae492284",
-      "sum": "2FR289B1LGUf5tTN4PXBj5TjRX7okSFxE8uHkSslzDQ="
-    },
-    {
-      "source": {
-        "git": {
-          "remote": "https://github.com/coreos/prometheus-operator.git",
-          "subdir": "jsonnet/prometheus-operator"
-        }
-      },
-      "version": "e31c69f9b5c6555e0f4a5c1f39d0f03182dd6b41",
-      "sum": "WggWVWZ+CBEUThQCztSaRELbtqdXf9s3OFzf06HbYNA="
-    },
-    {
-      "source": {
-        "git": {
           "remote": "https://github.com/grafana/grafonnet-lib.git",
           "subdir": "grafonnet"
         }
@@ -111,6 +91,26 @@
       },
       "version": "d667979ed55ad1c4db44d331b51d646f5b903aa7",
       "sum": "o5avaguRsfFwYFNen00ZEsub1x4i8Z/ZZ2QoEjFMff8="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/prometheus-operator/kube-prometheus.git",
+          "subdir": "jsonnet/kube-prometheus"
+        }
+      },
+      "version": "0edb796d5738c3dad0d1b72760da8728e3fa56bf",
+      "sum": "JoqhRE5ycnhhb0UAUXGfydzbTfiagwRFsiB1M3joRe8="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/prometheus-operator/prometheus-operator.git",
+          "subdir": "jsonnet/prometheus-operator"
+        }
+      },
+      "version": "9b0857f9892bdb233d48b3870f9b1544c1fde226",
+      "sum": "WggWVWZ+CBEUThQCztSaRELbtqdXf9s3OFzf06HbYNA="
     },
     {
       "source": {
